@@ -4,4 +4,20 @@
 The code follows the book closely, but I intend to apply cleaner code practices if/when possible and implement other useful features that have been mentioned, but are out of the scope of this book. 
 
 ## Usage
-Currently in progress, this code cannot be utilized, refer to test files for use cases.
+Run the program:
+```
+go run .
+```
+**monkeylang** currently prints out the token representation of the entered statements. Example:
+```
+Welcome to monkeylang!
+This prompt now accepts your commands:
+>> let x = "asd";
+{Type:LET Literal:let}
+{Type:IDENT Literal:x}
+{Type:= Literal:=}
+{Type:ILLEGAL Literal:"}
+{Type:IDENT Literal:asd}
+{Type:ILLEGAL Literal:"}
+{Type:; Literal:;}
+```
